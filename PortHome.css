@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mainbody{
+    display: flex;
+}
+
+
+/* navigation bar */
+.navbar{
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    position: fixed;
+}
+.circle{
+    border: solid 7px gray;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+.circle img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;  
+}
+.icon img:hover{
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+
+}
+.navbar h3{
+    color: white;
+    margin-left:70px;
+    font-family:'Times New Roman', Times, serif;
+}
+.navbar ul a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-decoration: none;
+    color: grey;
+    position: relative;
+}
+.txt a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: crimson;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    transition: 0.5s;
+}
+.txt a:hover::after{
+    width: 80%;
+}
+.icon{
+    border: solid 0px red;
+    display: flex;
+    height: 40px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.Hnav{
+    display: flex;
+}
+.Hnav .logo{
+    border: solid 0px red;
+    height: 150px;
+    width: 30px;
+    margin-top: 40px;
+    margin-left: 70px;
+    line-height: 37px;
+}
+.Hnav .txt{
+    border: solid 0px red;
+    height: 180px;
+    width: 50px;
+    margin-top: 40px;
+    line-height: 36px;
+    
+}
+
+/* main body */
+.maincontainer{
+    border: solid 0px red;
+    height: 2200px;
+    width: 80%;
+    margin-left: 300px;
+    /* background-image: url(./images/background\ image.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+
+/*---------- Home ------------*/
+
+.box1{
+    height: 600px;
+    width: 100%;
+    background-image: url(./images/bg2.avif);
+    background-size: cover;
+    background-position: center;
+}
+/* .box1 img{
+    height: 600px;
+    width: 100%;
+    position: relative;
+} */
+.box1 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    margin-left: 30%;
+    color: white;
+    position: absolute;
+}
+.box1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    margin-left: 55%;
+    margin-top: 250px;
+}
+
+/* ----------About----------- */
+
+.box2{
+    height: 550px;
+    width: 100%;
+    background-color: black;
+}
+.box2 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+.box2 p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-indent: 100px;
+}
+.box2 ul{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+/*---------- box3 ---------*/
+
+.box3{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+}
+.pbox{
+    border: solid 0px blue;
+    height: 250px;
+    width: 100%;
+    background-color: black;
+}
+.images{
+    border: solid 0px red;
+    height: 200px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.pbox img{
+    border-radius: 10px;
+}
+.pbox ul{
+    color: crimson;
+    display: flex;
+    justify-content:space-around
+    
+}
+.box3 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+.pbox img{
+    height: 170px;
+    width: 300px;
+}
+
+/* ----------box4 -- skills---------*/
+.box4{
+    height: 650px;
+    width: 100%;
+    background-color: black;
+    margin-top: 200px;
+}
+.box4 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    
+}
+.s1 h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+.s2 h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: crimson;
+    margin-top: 70px;
+    margin-left: 90px;
+}
+.s1 ul{
+    color: white;
+    margin-left: 120px;
+    line-height: 30px;
+}
+.s2 ul{
+    color: white;
+    margin-left: 120px;
+    line-height: 30px;
+}
+
+
+/* -----------contact details----------- */
+
+.box5{
+    border: solid 0px red;
+    height: 500px;
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.col1{
+    border: solid 0px red;
+    height: 250px;
+    width: 400px;
+    color: white;
+    margin-left: 15px;
+}
+.col1 h1{
+    color: white;
+    margin-top: 50px;
+}
+.col1 img{
+    height: 20px;
+    width: 20px;
+}
+.row{
+    margin-top: 150px;
+}
+.down a{
+    color: white;
+    text-decoration: none;
+}
+.down{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.down:hover{
+    transition: transform 0.2s;
+    transform: translateY(-5px);
+}
+.col2{
+    border: solid 0px red;
+    height: 330px;
+    width: 500px;
+}
+.col2 input{
+    height: 35px;
+    width: 90%;
+    margin-left: 5%;
+    background:none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+.col2 textarea{
+    height: 160px;
+    width: 90%;
+    margin-left: 5%;
+    background:none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+.col2 button{
+    height: 30px;
+    width: 150px;
+    background-color: crimson;
+    border-radius: 10px;
+    margin-left: 180px;
+    border: none;
+    color: white;
+    /* cursor: pointer; */
+}
+.col2 button:hover{
+    transform: scale(1.1);
+}
+
+
